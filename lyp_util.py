@@ -1,5 +1,8 @@
 import pickle
 
+def allfiles_in(path: str) -> []:
+    return [os.path.join(path, file) for file in os.listdir(path)]
+
 
 def load_or_execute(fname: str, fn, force_execute: bool = False) ->  (object, bool):
     ''''Load pickle file or execution function if error or forsed.'''
