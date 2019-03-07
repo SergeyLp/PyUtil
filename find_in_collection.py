@@ -1,4 +1,10 @@
 def find_one(x, Q, start: int, end: int) -> int:
+    ''' x  What finding, must have len() 
+       Q  Collection for finding
+       start index of first where been startin search
+       end index until searching is doing
+       return index first found element in collection Q
+    '''
     try:
         return Q.index(x, start, end)
     except ValueError:
@@ -28,6 +34,15 @@ def find_whole(x, Q) -> bool:
              return True
 
      return False 
+     
+     
+def is_all_in(Qx, Q)->bool:
+  for x in Q:
+   if x not in Qx:
+       return False
+
+  return True
+     
 
 if __name__ == '__main__':
     s = [("1012","1013","1012","1013","1014", ),('1000',), ('1001','1002'),
