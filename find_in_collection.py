@@ -37,6 +37,9 @@ def find_whole(x, Q) -> bool:
      
      
 def is_all_in(Qx, Q)->bool:
+'''Return true if all elements of Qx
+   exist in Q
+'''
   for x in Q:
    if x not in Qx:
        return False
